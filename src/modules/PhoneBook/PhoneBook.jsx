@@ -22,7 +22,7 @@ const PhoneBook = () => {
     <Box pt={50} pl={15} pr={15} textAlign="center" as="section">
       <h2>Phonebook</h2>
       <PhoneBookForm />
-      {contacts.length ? (
+      {/* {contacts.length ? (
         <Box border="1px solid black" pt={50} pb={50}>
           <PhoneBookFilter />
           <h3>Contacts</h3>
@@ -33,7 +33,11 @@ const PhoneBook = () => {
         </Box>
       ) : (
         <p>You haven`t any contacts added yet</p>
-      )}
+      )} */}
+      <Box border="1px solid black" pt={50} pb={50}>
+        <PhoneBookFilter />
+        <ContactList />
+      </Box>
     </Box>
   );
 };
